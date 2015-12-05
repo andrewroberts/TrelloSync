@@ -3,6 +3,8 @@ A Google Sheets Apps Script for the bulk production of Trello cards; creating a 
 
 It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/GAS-TrelloApp).
 
+**STOP PRESS: I'm in the process of updating the code so I can release it as an add-on, but I've not put it up here yet - watch this space or drop me a line for a copy.**
+
 ##Future Development
 This is only my first bash at creating a GAS Trello App that easily connects to the Trello API (a couple of windows to click through rather than having to copy/paste auth tokens). The main functionality it has at the moment is simply creating Trello cards - with a basic set of properties - from a GSheet. Ultimately this will be an add-on that allows a GSheet to be synced with a Trello board to provide the nice visual UI or Trello along with the compact summary a spreadsheet provides.
 
