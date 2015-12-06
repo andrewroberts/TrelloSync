@@ -15,7 +15,7 @@ At the moment the only card properties that can be specified are:
 * card description
 
 ## Installation 
-You can use the latest code by taking a copy of [this sheet] (https://docs.google.com/spreadsheets/d/1EPjAnOA00aiytra2uhMlg268PS0bKrODhShOFBU8FTU/edit#gid=0) or copy the script files into your own GSheet.
+You can use the latest code by taking a copy of this sheet (link coming soon) or copy the script files into your own GSheet.
 
 As this is the version I'm actively working on this version probably has debug enabled (var PRODUCTION_VERSION = false), which will carry out extra error checking (making it more robust but a little slower) and displays the debug menu for things like checking the internal properties, forcing the script to reset, uninstalling the script, etc. You can enable production mode by setting "var PRODUCTION_VERSION = true" in config.gs.
 
