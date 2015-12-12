@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+    <base target="_top">
+  </head>
+  <body>
+    <form>
+<!--    
+    <h1>Select Sheet</h1>
+    <p>Select the sheet that contains the new card details.</p>
+      <table width="50%">
+        <tr><td>Trello Card Sheet Name:</td><td><select name="sheet-name" id="sheet-name"><?!= sheetNameOptions ?></select></td></tr>
+      </table>
+-->
+    <h1>Identify Card Properties</h1>
+    <p>Select the column header that matches the appropriate Trello card property.
+    Each row in the selected sheet is used to create a new Trello card,  
+    each column in the sheet is used to set the properties of that card.</p>
+      <table width="100%">
+        <tr><td>Board Name:</td><td><select name="board-name" id="board-name"><?!= boardOptions ?></select></td>
+        <td>Card Name:</td><td><select name="card-name" id="card-name"><?!= cardnameOptions ?></select></td></tr>
+        <tr><td>List Name:</td><td><select name="list-name" id="list-name"><?!= listOptions ?></select></td>
+        <td>Card Description:</td><td><select name="card-description" id="card-description"><?!= descriptionOptions ?></select></td></tr>
+      </table>
+      <br />
+      <input class="blue" type="button" value="Save" onclick="uiUpdateSettings(this.parentNode)" />
+      <input type="button" value="Cancel" onclick="google.script.host.close()" />
+    </form>
+    <?!= include('Settings.js') ?>
+  </body>
+</html>
+
+
