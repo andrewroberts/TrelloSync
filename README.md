@@ -7,8 +7,9 @@ It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andre
 ## Getting Started
 
 * Create a new Google Spreadsheet on your [Google Drive] (https://drive.google.com);
+* install the TrelloSync add-on (Add-ons>Get add-ons...);
 * in the spreadsheet create a sheet called TrelloSync and create one row for each card, with one column for each of the board name, list name, card name and card description;
-* click the custom menu option "Add-ons>TrelloSync>Create cards" to create the cards.
+* create the new Trello cards ("Add-ons>TrelloSync>Create cards").
 
 ## Authorisation
 
