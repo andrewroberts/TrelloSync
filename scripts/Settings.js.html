@@ -1,0 +1,25 @@
+<script>
+
+/**
+ * Store the latest values from the settings UI
+ */
+ 
+function uiUpdateSettings(formObject) {
+
+  google.script.run
+    .withSuccessHandler(onSuccess)
+    .onUpdateSettings(formObject)
+
+  google.script.host.close()
+
+  return
+
+  // Private Functions
+  // -----------------
+
+  function onSuccess() {  
+  }
+
+} // getSettingValues()
+
+</script>
