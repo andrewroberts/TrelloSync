@@ -1,4 +1,4 @@
-# GAS-TrelloSync
+# TrelloSync
 A Google Sheets Apps Script for the bulk production of Trello cards; creating a set of Trello cards from a list in a GSheet.
 
 It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/GAS-TrelloApp).
