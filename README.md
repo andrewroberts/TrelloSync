@@ -1,35 +1,39 @@
 # TrelloSync
-A Google Sheets Apps Script for the bulk production of Trello cards; creating a set of Trello cards from a list in a GSheet.
+
+A Google Sheets Add-on (Apps Script) for the bulk production of Trello cards.
 
 It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/GAS-TrelloApp).
 
-**STOP PRESS: I'm in the process of updating the code so I can release it as an add-on, but I've not put it up here yet - watch this space or drop me a line for a copy.**
+## Getting Started
 
-##Future Development
-This is only my first bash at creating a GAS Trello App that easily connects to the Trello API (a couple of windows to click through rather than having to copy/paste auth tokens). The main functionality it has at the moment is simply creating Trello cards - with a basic set of properties - from a GSheet. Ultimately this will be an add-on that allows a GSheet to be synced with a Trello board to provide the nice visual UI or Trello along with the compact summary a spreadsheet provides.
+* Create a new Google Spreadsheet on your [Google Drive] (https://drive.google.com);
+* in the spreadsheet create a sheet called TrelloSync and create one row for each card, with one column for each of the board name, list name, card name and card description;
+* click the custom menu option "Add-ons>TrelloSync>Create cards" to create the cards.
 
-At the moment the only card properties that can be specified are:
-* board name
-* list name
-* card name
-* card description
+## Authorisation
 
-## Installation 
-You can use the latest code by taking a copy of this sheet (link coming soon) or copy the script files into your own GSheet.
+The first time you execute any of the menu options you'll need to go through the Trello authorisation flow:
 
-As this is the version I'm actively working on this version probably has debug enabled (var PRODUCTION_VERSION = false), which will carry out extra error checking (making it more robust but a little slower) and displays the debug menu for things like checking the internal properties, forcing the script to reset, uninstalling the script, etc. You can enable production mode by setting "var PRODUCTION_VERSION = true" in config.gs.
+* A dialog in the sheet will instruct you to look out for the first auth window, 
 
-## Usage
-* **create Trello lists and boards** - ensure you have already created the boards and lists the new cards will use;
-* **install the script in your GSheet** - as described above install the script and refresh the sheet to make sure you see the "TrelloSync" custom menu;
-* **create your list of cards** - complete or copy/paste a sheet called "TrelloSync" where there is one column for the new cards board name, list name, card name and description;
- 
-![](https://cloud.githubusercontent.com/assets/4705245/11320464/96dd5060-9090-11e5-9655-5302f82e97d0.png)
+* a new window is automatically opened where you need to click on the link to open the Trello auth window: "Click to authorize Google Apps integration", if you are not logged into Trello you'll be asked to do so;
 
-* **connect to your Trello account** - use the custom menu "TrelloSync>Display Trello boards..." to authorise a connection between the script and your Trello account - and display a list of your boards (this will take you a series of windows the first time you use it, or if you connection has expired);
-* **match columns to card properties** - "TrelloSync>Match headers to Trello card properties";
-* **create your new cards** - "TrelloSync>Create Trello cards".
- 
-You should now see all your new cards in Trello.
+* in the Trello auth window - "Let TrelloApp use your account?" - click "Allow";
 
-A Log sheet is created where you can also check on the progress of the script.
+* You should now see "Google Apps integration authorized for user:" and your email address;
+
+You can now close this window and re-attempt the menu action.
+
+It is possible for the app's permission to be revoked from within Trello in which case whenever you try and create new cards TrelloSync will simply report "0 cards created". In this case use "TrelloSync>Reset" and then the next time you attempt to contact Trello you'll run through the auth flow again.
+
+## Support 
+
+Contact [andrew@roberts.net](mailto:andrew@roberts.net) or check out [the issues page] (https://github.com/andrewroberts/TrelloSync/issues).
+
+You can [follow me on twitter] (https://www.twitter.com/andrewroberts6) or [on my blog] (http://www.andrewroberts.net/category/computing/) for the latest updates.
+
+## Developers
+
+The source code is open source and released under GPL v3.
+
+[A copy of v0.1 of the Google Apps Script can be found here] (https://script.google.com/d/1wpId9rciaxL0R8e6Qc1NrAapWtzx-kIabUrEKHGXKuFOobYzZpNoNShf/edit?usp=sharing).
