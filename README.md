@@ -11,6 +11,17 @@ It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andre
 * in the spreadsheet create a sheet called TrelloSync and create one row for each card, with one column for each of the board name, list name, card name and card description;
 * create the new Trello cards ("Add-ons>TrelloSync>Create cards").
 
+### Manually installing the scripts
+
+If, rather than use the add-on, you want to manually copy the scripts into your own sheet there are several libraries you'll need:
+
+* Assert (MN2v6JNucOc0S385I-FMvAB8_L47d2MW6)
+* Log (MqTFuiXcPtS5rVUZ_jC9Z4tnfWGfgtIUb)
+* Dialog (MWPmswuaTtvxxYA71VTxu7B8_L47d2MW6)
+* GAS-TrelloApp (MOXamiHNCH44xpQh9H7FTudnfWGfgtIUb) - *NOTE: change the identifier to TrelloApp*
+
+The libraries are added under Resources>LIbraries in the script editor using the long ID value. [See the reference docs for more info] (https://developers.google.com/apps-script/guide_libraries).
+
 ## Authorisation
 
 The first time you execute any of the menu options you'll need to go through the Trello authorisation flow:
