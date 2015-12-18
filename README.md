@@ -2,7 +2,7 @@
 
 A Google Sheets Add-on (Apps Script) for the bulk production of Trello cards.
 
-It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/GAS-TrelloApp).
+It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/TrelloApp).
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ If, rather than use the add-on, you want to manually copy the scripts into your 
 * Assert (MN2v6JNucOc0S385I-FMvAB8_L47d2MW6)
 * Log (MqTFuiXcPtS5rVUZ_jC9Z4tnfWGfgtIUb)
 * Dialog (MWPmswuaTtvxxYA71VTxu7B8_L47d2MW6)
-* GAS-TrelloApp (MOXamiHNCH44xpQh9H7FTudnfWGfgtIUb) - *NOTE: change the identifier to TrelloApp*
+* TrelloApp (MOXamiHNCH44xpQh9H7FTudnfWGfgtIUb)
 
 The libraries are added under Resources>LIbraries in the script editor using the long ID value. [See the reference docs for more info] (https://developers.google.com/apps-script/guide_libraries).
 
@@ -48,4 +48,7 @@ You can [follow me on twitter] (https://www.twitter.com/andrewroberts6) or [on m
 
 The source code is open source and released under GPL v3.
 
-[A copy of v0.1 of the Google Apps Script can be found here] (https://script.google.com/d/1wpId9rciaxL0R8e6Qc1NrAapWtzx-kIabUrEKHGXKuFOobYzZpNoNShf/edit?usp=sharing).
+To avoid having to copy/paste these files into your own project you can simply take a copy of:
+
+* [v0.1] (https://script.google.com/d/1wpId9rciaxL0R8e6Qc1NrAapWtzx-kIabUrEKHGXKuFOobYzZpNoNShf/edit?usp=sharing)
+* [v0.1.2] (https://script.google.com/d/1L5RCIDS9b-RVF0-kl1aL7QmftEgOQ6PxCa4XyggEFZJgISzSceOQWPv_/edit?usp=sharing)
