@@ -171,11 +171,11 @@ showAuthorisationDialog: function() {
     
   // This is a special error thrown by TrelloApp to indicate
   // that user authorization is required
-  var trelloApp = new TrelloApp.App()
+  var trelloApp = new TrelloApp.App({log: Log})
   var authorizationUrl = trelloApp.getAuthorizationUri()
   
   Dialog.show(
-    'Opening Authorization window...', 
+    'Opening authorization window...', 
       'Follow the instructions in this window, close ' + 
       'it and then try the action again. ' + 
       '<br/><br/>Look out for a warning that ' + 
@@ -233,14 +233,13 @@ assertValidIndex: function(headerIndex, propertyName) {
 toast: function(message) {
   
   Log.functionEntryPoint()
+  Log.info(message)
   
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
   
   if (!PRODUCTION_VERSION && spreadsheet === null) {
     throw new Error('toast() called in wrong context.')
   }
-  
-  Log.info(message)
   
   // The -1 means display until the user closes it
   spreadsheet.toast(message, SCRIPT_NAME, -1)
