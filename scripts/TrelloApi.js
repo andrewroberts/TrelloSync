@@ -41,8 +41,8 @@ var TrelloApi_ = {
       throw new Error('Forced error in displayBoards().')
     }
     
-    var trelloApp = new TrelloApp.App()
-    var boards = trelloApp.getMyBoards()
+    var trelloApp = new TrelloApp.App({log: Log})
+    var boards = trelloApp.getMyBoards({filter: 'open'})
     
     if (boards === null) {
       Utils_.toast('No boards found.')
@@ -50,7 +50,12 @@ var TrelloApi_ = {
     }
     
     var message = '<ul>'
+    
     var dialogHeight = 90 + (boards.length * 18)
+    
+    if (dialogHeight > 600) {
+      dialogHeight = 600
+    }
     
     boards.forEach(function(board) {
     
@@ -72,7 +77,7 @@ var TrelloApi_ = {
   uploadCards: function() {
 
     var properties = Utils_.getPropertiesService()
-    var trelloApp = new TrelloApp.App()
+    var trelloApp = new TrelloApp.App({log: Log})
     var trelloSheetName = Utils_.getTrelloSheetName()
     
     var sheet = SpreadsheetApp
@@ -84,7 +89,7 @@ var TrelloApi_ = {
         'There has to be a sheet called ' + trelloSheetName + ' describing the cards.')
     }  
       
-    var boards = trelloApp.getMyBoards()
+    var boards = trelloApp.getMyBoards({filter: 'open'})
       
     if (boards === null) {
       Utils_.toast('No boards found.')
@@ -218,7 +223,7 @@ var TrelloApi_ = {
   reset: function() {
     
     Log.functionEntryPoint()
-    var trelloApp = new TrelloApp.App()
+    var trelloApp = new TrelloApp.App({log: Log})
     trelloApp.reset()
       
   }, // TrelloApi_.reset()
