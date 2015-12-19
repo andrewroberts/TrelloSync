@@ -8,16 +8,20 @@ function uiUpdateSettings(formObject) {
 
   google.script.run
     .withSuccessHandler(onSuccess)
+    .withFailureHandler(onFailure)
     .onUpdateSettings(formObject)
-
-  google.script.host.close()
 
   return
 
   // Private Functions
   // -----------------
 
-  function onSuccess() {  
+  function onSuccess() {
+    google.script.host.close()
+  }
+
+  function onFailure() {
+    google.script.host.close()
   }
 
 } // getSettingValues()
