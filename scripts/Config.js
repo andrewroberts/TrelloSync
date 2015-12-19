@@ -32,7 +32,7 @@
 // ======
 
 var SCRIPT_NAME = 'TrelloSync'
-var SCRIPT_VERSION = 'v0.1'
+var SCRIPT_VERSION = 'v0.1.2'
 
 var PRODUCTION_VERSION = true
 
