@@ -48,6 +48,8 @@ You can [follow me on twitter] (https://www.twitter.com/andrewroberts6) or [on m
 
 The source code is open source and released under GPL v3.
 
+There is a [GDoc test document] (https://docs.google.com/document/d/1bEG0-ekH-0godjc-_xrKDzWnFDy8iiq08RcOKlCbhvM/edit#).
+
 To avoid having to copy/paste these files into your own project you can simply take a copy of:
 
 * [v0.1] (https://script.google.com/d/1wpId9rciaxL0R8e6Qc1NrAapWtzx-kIabUrEKHGXKuFOobYzZpNoNShf/edit?usp=sharing)
