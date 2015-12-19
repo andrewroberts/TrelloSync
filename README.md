@@ -2,6 +2,8 @@
 
 [A Google Sheets Add-on (Apps Script) for the bulk production of Trello cards] (https://chrome.google.com/webstore/detail/trellosync/kghfonofcblmpngnabdfjamaiiindkaa).
 
+*Beta Testers wanted - the add-on isn't available in the chrome web store at the moment as it is still under review, but you can still install the beta version using the above link*
+
 ## Getting Started
 
 * Create a new Google Spreadsheet on your [Google Drive] (https://drive.google.com);
