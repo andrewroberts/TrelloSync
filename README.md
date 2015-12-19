@@ -1,8 +1,8 @@
 # TrelloSync
 
-A Google Sheets Add-on (Apps Script) for the bulk production of Trello cards.
+[A Google Sheets Add-on (Apps Script) for the bulk production of Trello cards] (https://chrome.google.com/webstore/detail/trellosync/kghfonofcblmpngnabdfjamaiiindkaa).
 
-It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andrewroberts/TrelloApp).
+It uses the [GAS Trello API wrapper library TrelloApp] .
 
 ## Getting Started
 
@@ -10,17 +10,6 @@ It uses the [GAS Trello API wrapper library TrelloApp] (https://github.com/andre
 * install the TrelloSync add-on (Add-ons>Get add-ons...);
 * in the spreadsheet create a sheet called TrelloSync and create one row for each card, with one column for each of the board name, list name, card name and card description;
 * create the new Trello cards ("Add-ons>TrelloSync>Create cards").
-
-### Manually installing the scripts
-
-If, rather than use the add-on, you want to manually copy the scripts into your own sheet there are several libraries you'll need:
-
-* Assert (MN2v6JNucOc0S385I-FMvAB8_L47d2MW6)
-* Log (MqTFuiXcPtS5rVUZ_jC9Z4tnfWGfgtIUb)
-* Dialog (MWPmswuaTtvxxYA71VTxu7B8_L47d2MW6)
-* TrelloApp (MOXamiHNCH44xpQh9H7FTudnfWGfgtIUb)
-
-The libraries are added under Resources>LIbraries in the script editor using the long ID value. [See the reference docs for more info] (https://developers.google.com/apps-script/guide_libraries).
 
 ## Authorisation
 
@@ -50,7 +39,22 @@ You can [follow me on twitter] (https://www.twitter.com/andrewroberts6) or [on m
 
 The source code is open source and released under GPL v3.
 
+### Manually installing the scripts
+
+If, rather than use the add-on, you want to manually copy the scripts into your own sheet there are several libraries you'll need:
+
+* Assert (MN2v6JNucOc0S385I-FMvAB8_L47d2MW6)
+* Log (MqTFuiXcPtS5rVUZ_jC9Z4tnfWGfgtIUb)
+* [Dialog] (https://github.com/andrewroberts/GAS-Dialog) (MWPmswuaTtvxxYA71VTxu7B8_L47d2MW6)
+* [TrelloApp] (https://github.com/andrewroberts/TrelloApp) (MOXamiHNCH44xpQh9H7FTudnfWGfgtIUb)
+
+The libraries are added under Resources>LIbraries in the script editor using the long ID value. [See the reference docs for more info] (https://developers.google.com/apps-script/guide_libraries).
+
+### Testing
+
 There is a [GDoc test document] (https://docs.google.com/document/d/1bEG0-ekH-0godjc-_xrKDzWnFDy8iiq08RcOKlCbhvM/edit#).
+
+### Copy the Apps Script project
 
 To avoid having to copy/paste these files into your own project you can simply take a copy of:
 
