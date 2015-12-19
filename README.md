@@ -40,6 +40,8 @@ It is possible for the app's permission to be revoked from within Trello in whic
 
 ## Support 
 
+Take a look in the [Google+ TrelloSync Community] (https://plus.google.com/communities/110171361404440181188).
+
 Contact [andrew@roberts.net](mailto:andrew@roberts.net) or check out [the issues page] (https://github.com/andrewroberts/TrelloSync/issues).
 
 You can [follow me on twitter] (https://www.twitter.com/andrewroberts6) or [on my blog] (http://www.andrewroberts.net/category/computing/) for the latest updates.
